@@ -20,8 +20,11 @@
     header {
       background: linear-gradient(to right, #002855, #005fa3);
       color: white;
-      padding: 3rem 2rem;
-      text-align: center;
+      padding: 2.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
     header h1 {
       font-size: 2.5rem;
@@ -43,11 +46,20 @@
     .btn:hover {
       background-color: #e6a300;
     }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #ffb400;
+      object-fit: cover;
+      margin-top: 1rem;
+    }
     nav {
       display: flex;
       justify-content: center;
       background-color: #001e40;
       padding: 1rem;
+      flex-wrap: wrap;
     }
     nav a {
       color: white;
@@ -77,6 +89,13 @@
     .contact-info p {
       margin: 0.5rem 0;
     }
+    .contact-info a {
+      color: #005fa3;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
     footer {
       background-color: #002855;
       color: white;
@@ -89,9 +108,14 @@
 <body>
 
   <header>
-    <h1>Ramesh Naidu Kottavalasa</h1>
-    <p>Oracle Apps Technical Consultant</p>
-    <a href="#contact" class="btn">Contact Me</a>
+    <div>
+      <h1>Ramesh Naidu Kottavalasa</h1>
+      <p>Oracle Apps Technical Consultant</p>
+      <a href="#contact" class="btn" style="margin-top: 1rem;">Contact Me</a>
+    </div>
+    <div>
+      <img src="1750089584492.jpg" alt="Ramesh Naidu">
+    </div>
   </header>
 
   <nav>
@@ -141,7 +165,7 @@
       <p><strong>Email:</strong> rameshnaidu2k23@gmail.com</p>
       <p><strong>Phone:</strong> +91 9347242330</p>
       <p><strong>Location:</strong> Srikakulam, Andhra Pradesh</p>
-      <p><strong>LinkedIn:</strong> Ramesh Naidu Kottavalasa</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ramesh-naidu-kottavalasa-3416a7318/" target="_blank">Ramesh Naidu Kottavalasa</a></p>
       <p><strong>GitHub:</strong> Ramesh Naidu Kottavalasa</p>
     </div>
   </section>
